@@ -3,12 +3,12 @@ import matplotlib.pyplot as plt
 from matplotlib import ticker
 from matplotlib.ticker import ScalarFormatter
 
-file_name = 'Property Sales data.csv'
+file_name = 'D:\Personal Projects\conferenceEvents\Malik InamElahi\Property Sales data.csv'
 df= pd.read_csv(file_name)
 print(df)
 
 
-'''def line_chart_by_property_type(df):
+def line_chart_by_property_type(df):
     # Group data by Year and PropertyType and calculate the average price
     avg_price_by_year_property_type = df.groupby(['Year', 'propertyType'])['price'].mean().reset_index()
 
@@ -31,9 +31,9 @@ print(df)
     plt.show()
 
 
-line_chart_by_property_type(df)'''
+line_chart_by_property_type(df)
 
-'''def price_histogram(df):
+def price_histogram(df):
     # Plotting the histogram
     plt.figure(figsize=(10, 6))
     plt.hist(df['price'], bins=20, color='black', edgecolor='black')
@@ -48,12 +48,12 @@ line_chart_by_property_type(df)'''
     plt.show()
 
 # Call the function with your DataFrame
-price_histogram(df)'''
+price_histogram(df)
 
 
 
 
-'''def bar_plot(df):
+def bar_plot(df):
     # Group data by PropertyType and calculate the sum of prices
     price_sum_by_property_type = df.groupby('propertyType')['price'].sum()
 
@@ -73,7 +73,7 @@ price_histogram(df)'''
     plt.show()
 
 # Call the function with your DataFrame
-bar_plot(df)'''
+bar_plot(df)
 
 
 
